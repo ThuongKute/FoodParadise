@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link font -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <!-- Link icon -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- favicon -->
+   <link rel="shortcut icon" href="../image/images/1.svg" type="image/x-icon" />
+   <!-- Link css -->
+  <link rel="stylesheet" href="../css/loginadmin.css">
+  <!-- Link js -->
+  <script src="mainadmin.js"></script>
+  <title>Admin</title>
+</head>
+
+<body>
+  <!-- form bên ngoài -->
+  <div class="wrapper">
+    <div class="background">
+      <div class="left">
+        <h2 class="back-header">Bạn chưa có tài khoản?</h2>
+        <p class="back-p">Đăng kí ngay!</p>
+        <button class="back-btn signup-but">Đăng kí</button>
+      </div>
+      <div class="right">
+        <h2 class="back-header">Bạn đã có tài khoản?</h2>
+        <p class="back-p">Đăng nhập để quản lí!</p>
+        <button class="back-btn login-but">Đăng nhập</button>
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="sign-up">
+        <h2 class="form-header">SIGN UP</h2>
+        <input type="text" id="user" placeholder="Enter  Name"><i class="fa fa-user"></i></input>
+        <input type="text" id="email" placeholder="Email"><i class="fa fa-envelope-o"></i></input>
+        <input type="password" id="pass" placeholder="Password"><i class="fa fa-lock"></i></input>
+        <button class="form-btn" onclick="signup()">SIGN UP</button>
+      </div>
+      <div class="login hide">
+        <h2 class="form-header">LOGIN</h2>
+        <input type="text" id="email" placeholder="Email"><i class="fa fa-envelope-o"></i></input>
+        <input type="password" id="pass" placeholder="Password"><i class="fa fa-lock"></i></input>
+        <!-- <button class="form-btn">LOGIN</button> -->
+        <input type="button" value="LOGIN" class="form-btn" onclick="login()">
+        <a class="forgot" href="#">Forgot password</a>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+  <script src="../js/loginadmin.js"></script>
+</body>
+
+</html>

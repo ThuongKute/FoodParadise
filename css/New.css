@@ -1,0 +1,462 @@
+/* body {
+    background-image: url(https://thuocthang.com.vn/vnt_upload/File/Image/nuoc_mam_phu_quoc_vietnamfarmervn_1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+} */
+body{
+    background-color: #fff;
+}
+* {
+    font-family: "Lexend", sans-serif;
+    margin: 0;
+    padding: 0;
+   
+  }
+.navbar{
+display: flex;
+
+}
+
+.icons{
+display: flex;
+}
+
+.pic1 {
+    width: 100%;
+}
+
+.bor1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0a0a0a;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #ff0000, #00ff00) 1;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    margin-left: 16px;
+    background-color: rgb(254, 229, 249);
+}
+
+.myList {
+    list-style-type: none;
+    /* margin-left: 150px; */
+    width: 170px;
+}
+
+.myList li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.myList li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff5a5f;
+    border-radius: 50%;
+}
+
+.myList li:hover {
+    color: #ff5a5f;
+    cursor: pointer;
+}
+
+.pic2 {
+    border: 5px solid rgb(212, 134, 147);
+    border-image: url(border-pattern.png) 30 round;
+    width: 700px;
+    margin-left: 520px;
+    margin-top: -218px;
+}
+
+.color-transition {
+    transition: color 0.3s ease-in-out;
+    color: #e41616;
+    margin-left: 520px;
+    font-size: 18px;
+
+}
+
+.color-transition:hover {
+    color: rgb(235, 120, 13);
+}
+
+.long-text1 {
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-left: 520px;
+}
+
+.color-textlong {
+    transition: color 0.3s ease-in-out;
+    color: #e41616;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+
+}
+
+.color-textlong:hover {
+    color: rgba(0, 246, 148, 0.729);
+}
+
+.pic3 {
+    border: 5px solid rgb(92, 95, 94);
+    border-image: url(border-pattern.jpg) 50 round;
+    width: 700px;
+    height: 500px;
+    margin-left: 520px;
+    margin-top: 30px;
+}
+
+.icon {
+    margin-left: 520px;
+}
+
+.icontext {
+    font-size: 12px;
+}
+
+.icontext2 {
+    transition: color 0.3s ease-in-out;
+    color: #532e10;
+    font-size: 15px;
+
+}
+
+.icontext2:hover {
+    color: rgba(190, 83, 11, 0.627);
+}
+
+.wavy-divider {
+    width: 720px;
+    height: 3px;
+    background-color: rgb(255, 204, 0);
+    background-image: repeating-linear-gradient(-45deg, red, rgb(255, 140, 0) 10px, rgb(255, 0, 217) 10px, rgb(255, 0, 191) 20px);
+    margin: 20px 0;
+}
+
+#backtop {
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.banner {
+    margin-left: 150px;
+    width: 220px;
+    height: 200px;
+    position: relative;
+    animation: verticalMove 3s infinite;
+    transition: transform 0.1s ease-in-out;
+}
+
+.banner:hover {
+    transform: scale(1.1);
+}
+
+@keyframes verticalMove {
+    0% {
+        top: -580px;
+        background-color: red;
+    }
+
+    20% {
+        top: -620px;
+        background-color: blue;
+    }
+
+    40% {
+        top: -570px;
+        background-color: green;
+    }
+
+    60% {
+        top: -520px;
+        background-color: yellow;
+    }
+
+    80% {
+        top: -470px;
+        background-color: red;
+    }
+
+    100% {
+        top: -420px;
+        background-color: rgb(42, 139, 156);
+    }
+}
+
+.newcontainer {
+    margin-top: 110px;
+    background: #f55 url('https://cdn.tgdd.vn/Files/2017/03/24/964495/cach-nau-bun-bo-hue-gio-heo-ngon-cong-thuc-chuan-vi-202208251617593627.jpg');
+    width: 610px;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    margin-left: 150px;
+    overflow: hidden;
+}
+
+
+.newtext {
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    padding: 0px 10px;
+    position: absolute;
+    bottom: -46px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.newcontainer:hover .newtext {
+    bottom: 20px;
+    height: 50px;
+    opacity: 1;
+    padding: 10px;
+}
+
+.newtitle {
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.newcontainer1 {
+    background: #f55 url('https://www.disneycooking.com/wp-content/uploads/2020/11/com-hen-hue.jpg');
+    width: 530px;
+    height: 220px;
+    background-size: cover;
+    position: relative;
+    margin-top: -400px;
+    margin-left: 770px;
+    overflow: hidden;
+}
+
+.newtext1 {
+    background: rgb(0, 0, 0);
+
+    background: rgba(0, 0, 0, 0.5);
+
+    padding: 0px 10px;
+    position: absolute;
+    bottom: -23px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.newcontainer1:hover .newtext1 {
+    bottom: 20px;
+    height: 50px;
+    opacity: 1;
+    padding: 10px;
+}
+
+.newtitle1 {
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.newcontainer2 {
+    background: #f55 url('https://www.dinhnghia.com.vn/wp-content/uploads/2023/04/xoi-xeo-la-gi-5.webp');
+    width: 260px;
+    height: 170px;
+    background-size: cover;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 770px;
+    overflow: hidden;
+}
+
+.newtext2 {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px 10px;
+    position: absolute;
+    bottom: -45px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.newcontainer2:hover .newtext2 {
+    bottom: 20px;
+    height: 60px;
+    opacity: 1;
+    padding: 10px;
+}
+
+.newtitle2 {
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.newcontainer3 {
+    background: #f55 url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShdh8OGVngcntz6HVZd6w6ong1j5XXoplUng&usqp=CAU');
+    width: 260px;
+    height: 170px;
+    background-size: cover;
+    position: relative;
+    margin-top: -170px;
+    margin-left: 1040px;
+    overflow: hidden;
+}
+
+.newtext3 {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px 10px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.newcontainer3:hover .newtext3 {
+    bottom: 20px;
+    height: 60px;
+    opacity: 1;
+    padding: 10px;
+}
+
+.newtitle3 {
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.khung {
+    background-color: #f1f1f1;
+    width: 250px;
+    height: 220px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.pict1:hover img {
+    transform: scale(1.1);
+}
+
+.pict1 img {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin-left: 140px;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    margin-top: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+
+}
+.pict1 a{position: relative;
+    display: block;
+
+}
+.pict1 a .name{
+    position: absolute;
+    color: #f6f6f6;
+    font-weight: bold;
+    bottom: 0px;
+    margin-left: 150px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.pict1 a:hover .name{
+    bottom: 10%;
+    opacity: 1;
+}
+
+
+.road1 {
+    margin-top: -170px;
+    width: 330px;
+    margin-left: 130px;
+    margin-bottom: 30px;
+    color: #b4a7a7;
+}
+
+.road2 {
+    margin-top: 30px;
+    width: 330px;
+    margin-left: 130px;
+    margin-bottom: 30px;
+
+}
+
+.textpicture {
+    margin-left: 220px;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    margin-top: -1550px;
+    text-transform: uppercase;
+}
+
+.pict2:hover img {
+    transform: scale(1.1);
+}
+
+.pict2 img {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin-left: 140px;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    margin-top: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+
+}
+.pict2 a{position: relative;
+    display: block;
+
+}
+.pict2 a .name2{
+    position: absolute;
+    color: #f6f6f6;
+    font-weight: bold;
+    bottom: 0px;
+    margin-left: 140px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.pict2 a:hover .name2{
+    bottom: 15%;
+    opacity: 1;
+}

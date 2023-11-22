@@ -1,0 +1,31 @@
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+  }
+  body {
+    background-color: #fff;
+  }
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  * {
+    font-family: "Lexend", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+  }
+  ::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 4px;
+  }
+  

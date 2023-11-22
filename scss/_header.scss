@@ -1,0 +1,174 @@
+ .header {
+   position: fixed;
+   height: 8rem;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2rem 5rem;
+   background-color: #fff;
+   box-shadow: $box-shadow;
+   .logo {
+     img {
+       width: 20rem;
+       scale: 1.5;
+       padding: 0 2rem;
+     }
+   }
+   .navbar {
+     a {
+       display: block;
+       font-size: 1.7rem;
+       margin: 0 2rem;
+       color: $color_black;
+       transition: color 0.25s linear;
+       position: relative;
+       &::after {
+         content: "";
+         position: absolute;
+         top: 110%;
+         bottom: 0;
+         left: 50%; /* Đặt left thành 50% để nó bắt đầu từ giữa */
+         transform: translateX(-50%) scaleX(0); /* Thêm transform: translateX(-50%) để căn giữa */
+         width: 100%;
+         height: 3px;
+         background: $primary-color;
+         transform-origin: center; /* Đặt transform-origin thành center */
+         transition: transform 0.5s;
+       }
+  
+       &:hover {
+         color: $primary-color;
+       }
+  
+       &:hover::after {
+         transform: translateX(-50%) scaleX(1); /* Thêm transform: translateX(-50%) để căn giữa */
+       }
+     }
+   }
+   .icons {
+     div {
+       height: 4.5rem;
+       width: 4.5rem;
+       line-height: 4.5rem;
+       border-radius: 0.5rem;
+       color: $color_black;
+       font-size: 2rem;
+       margin-left: 0.3rem;
+       text-align: center;
+       transition: all 0.25s linear;
+       cursor: pointer;
+       &:hover {
+         background-color: $primary-color;
+         color: #fff;
+       }
+     }
+   }
+   #menu-btn {
+     display: none;
+   }
+   .login {
+     border-top: 0.5rem solid $primary-color;
+     position: absolute;
+     top: 100%;
+     right: -150%;
+     border-radius: 0.5rem;
+     box-shadow: $box-shadow;
+     width: auto;
+     height: auto;
+     background-color: #fff;
+     padding: 1rem;
+     a {
+       font-size: 1.6rem;
+       color: $color_black;
+       &:hover {
+         color: $primary-color;
+       }
+     }
+     &.active {
+       right: 11rem;
+       transition: right 0.25s liner;
+     }
+   }
+   .shopping-cart {
+     border-top: 0.5rem solid $primary-color;
+     position: absolute;
+     top: 100%;
+     right: -150%;
+     padding: 1rem;
+     border-radius: 0.5rem;
+     box-shadow: $box-shadow;
+     width: 50rem;
+     height: 85vh;
+     background-color: #fff;
+     &.active {
+       right: 2rem;
+       transition: right 0.25s liner;
+     }
+     .box {
+       display: flex;
+       align-items: center;
+       gap: 1rem;
+       position: relative;
+       margin: 1rem 0;
+       img {
+         height: 10rem;
+         object-fit: cover;
+       }
+       .fa-trash {
+         font-size: 2rem;
+         position: absolute;
+         top: 50%;
+         right: 2rem;
+         cursor: pointer;
+         color: rgba($color_black, 0.5);
+         transform: translateY(-50%);
+         &:hover {
+           color: $primary-color;
+         }
+       }
+       .content {
+         h3 {
+           color: $color_black;
+           font-size: 1.7rem;
+           padding-bottom: 1rem;
+         }
+         span {
+           color: $color_black;
+           font-size: 1.6rem;
+         }
+         .quantity {
+           padding-left: 0.1rem;
+         }
+       }
+     }
+     .total {
+       font-size: 2rem;
+       padding: 1rem 0;
+       text-align: center;
+       color: $color_black;
+     }
+     .btn {
+       text-align: center;
+       margin: 1rem;
+       display: block;
+       padding: 0.8rem 3rem;
+       font-size: 1.7rem;
+       border-radius: 0.5rem;
+       border: 0.2rem solid $color_black;
+       color: $color_black;
+       cursor: pointer;
+       transition: all 0.2s linear;
+       &:hover {
+         background-color: $primary-color;
+         color: #fff;
+         border: none;
+       }
+     }
+   }
+ }
+
+ 

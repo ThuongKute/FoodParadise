@@ -1,0 +1,38 @@
+@mixin img-zoom {
+  &:hover {
+    img {
+      // overflow: hidden; Sử dụng cho thẻ div bọc ảnh
+      transition: all 1.3s ease;
+      transform: scale(1.2);
+    }
+  }
+}
+
+@mixin card-body {
+  &-body {
+    .card-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .price {
+      color: red;
+    }
+    .reviews {
+      .stars {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        li {
+          display: inline-block;
+          .fa {
+            color: #f7c01b;
+          }
+        }
+      }
+      span {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

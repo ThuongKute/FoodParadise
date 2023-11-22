@@ -1,0 +1,72 @@
+.donate {
+  background: url(https://images.unsplash.com/photo-1534170131610-18177a660b3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem 20rem;
+  color: $color_white;
+  &-wrapper {
+    padding: 5rem 10rem;
+    background: rgba($color_black, 0.2);
+    border-radius: 0.5rem;
+    .title {
+      margin: 0;
+      font-size: 4rem;
+      font-weight: 600;
+    }
+    .desc {
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+    .btn {
+      font-size: 2rem;
+      font-weight: 500;
+      width: 15rem;
+      height: 5rem;
+      margin: 1rem 39%;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 0.5rem;
+      background-image: linear-gradient(
+        to right,
+        #ffdede 0%,
+        $primary-color 51%,
+        #ffdede 100%
+      );
+      border: none;
+      box-shadow: $box-shadow;
+      &:hover {
+        background-position: right center;
+      }
+    }
+  }
+}
+@media screen and (min-width:767px) and (max-width:1023px){
+  .donate {
+    padding: 10rem 10rem;
+    color: $color_white;
+    &-wrapper {
+      padding: 5rem 7rem;
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  .donate {
+    padding: 5rem 5rem;
+    color: $color_white;
+    &-wrapper {
+      font-size: 1.5;
+      padding: 2rem 5rem;
+      .btn{
+      margin: 1rem 35%;
+      }
+    }
+  }
+}

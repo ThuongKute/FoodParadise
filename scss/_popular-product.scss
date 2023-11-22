@@ -1,0 +1,45 @@
+.popular-product {
+    padding: 3rem;
+    height: auto;
+    width: 100%;
+    h2 {
+      font-size: 2rem;
+      color: $color_black;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3rem;
+      text-align: center;
+      position: relative;
+      &::after {
+        content: "";
+        display: inline;
+        position: absolute;
+        bottom: -11px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 8%;
+        border-bottom: 4px solid pink;
+        border-radius: 1rem;
+      }
+    }
+    .row {
+      margin: 4rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      .card {
+        cursor: pointer;
+        padding: 0;
+        margin: 0 2rem;
+        width: calc(25% - 4rem);
+        &-img {
+          overflow: hidden;
+          @include img-zoom;
+        }
+        @include card-body;
+      }
+    }
+  }
+  

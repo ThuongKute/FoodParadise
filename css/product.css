@@ -1,0 +1,127 @@
+
+.navbar{
+    display: flex;
+}
+* {
+    font-family: "Lexend", sans-serif;
+  }
+.info{
+    width: 620px;
+    height: 820px;
+    margin-top: -780px;
+    margin-left: -150px;
+    margin-bottom: 200px;
+    padding: 20px;
+    color:black;
+    background-color: #f5f5df;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    z-index: 12;
+}
+.com_hen{
+    margin-left: 800px;
+    font-size: 14px;
+    line-height: 20px;
+    color:rgb(90, 28, 28);
+}
+.com_hen i{
+    color:rgb(27, 89, 114);
+    padding: 6px;
+}
+.pic_hen{
+    margin-top: 30px;
+    margin-left: 20px;
+    border: 2px solid rgb(221, 212, 195);
+
+}
+
+.pic_hen:hover{
+    
+    transition: all 1.3s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.text_big{
+    font-weight: bold;
+    font-size: 17px;
+    color:rgb(117, 60, 6);
+   
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.text_big2{
+    font-size: 16px;
+    color:rgb(190, 100, 26);
+    
+     /* font-family: 'Times New Roman', Times, serif; */
+}
+.share{
+    font-size: 25px;
+    color:rgb(148, 130, 52);
+    padding: 6px;
+}
+.text_big0{
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    color:rgb(216, 132, 36);
+    margin-top: 120px;
+    margin-bottom: 40px;
+    /* background-color: #deecd7; */
+    opacity: 0.8;
+    display: inline-block;
+    margin-left: 230px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.road{
+    margin-top: 2px;
+    width: 530px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+   border-bottom: 2px solid rgb(240, 209, 153) !important;
+    
+}
+.pic2{
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 120px; 
+    height: 80px;
+    
+}
+.pic2:hover{
+    transition: all 1.3s ease;
+    transform: scale(1.2);
+}
+.other{
+    margin-top: -75px;
+    margin-left: 180px;
+    font-size: 13px;
+    color:rgb(92, 42, 7);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    z-index: 100;
+}
+.other i{
+    color:rgb(37, 135, 173);
+    padding: 6px;
+    font-size: 15px;
+}
+.other a {
+    color:rgb(153, 69, 8);
+    text-decoration: none;
+    font-weight: 500;
+}
+.other a:hover{
+    color:rgb(23, 27, 24);
+    transition: 0.2s;
+    text-decoration: underline !important;
+}
+.road2 {
+    margin-top: 50px;
+    width: 530px;
+    margin-left: 50px;
+    margin-bottom: 20px; 
+    border-bottom: 1px solid rgb(124, 105, 70) !important;
+}
+.com_hen .nav_icon{
+    color:rgb(194, 23, 23);
+}

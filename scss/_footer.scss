@@ -1,0 +1,113 @@
+.footer {
+    background-color: $background-color_1;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    padding: 50px;
+    .footer-left {
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+      padding-right: 15px;
+    }
+    .footer-center {
+      display: inline-block;
+      vertical-align: top;
+      width: 30%;
+      i {
+        background-color: $background-color_2;
+        color: $color_white;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+      }
+      i.fa-envelope {
+        font-size: 17px;
+        line-height: 38px;
+      }
+      p {
+        display: inline-block;
+        color: $color_white;
+        vertical-align: middle;
+        margin: 0;
+        span {
+          display: block;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 2;
+        }
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+    .footer-right {
+      display: inline-block;
+      vertical-align: top;
+      width: 35%;
+      img {
+        scale: 1.5;
+        margin-left: 5rem;
+      }
+    }
+    .about {
+      line-height: 20px;
+      color: $color_white;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+      span {
+        display: block;
+        color: $color_white;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+    .icons {
+      margin-top: 25px;
+      a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: $background-color_2;
+        border-radius: 2px;
+        font-size: 20px;
+        color: $color_white;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 3px;
+        margin-bottom: 5px;
+      }
+    }
+    h2 {
+      color: $color_white;
+      font-size: 36px;
+      font-weight: normal;
+      margin: 0;
+      span {
+        color: $primary-color;
+      }
+    }
+    .menu {
+      color: $color_white;
+      margin: 20px 0 12px;
+      padding: 0;
+      a {
+        display: inline-block;
+        font-weight: 500;
+        line-height: 1.8;
+        color: #fff;
+        &:hover {
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }

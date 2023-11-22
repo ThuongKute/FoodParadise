@@ -1,0 +1,79 @@
+.banner-slider {
+  .c-item {
+    position: relative;
+    height: 70rem;
+    &.active {
+      .c-caption {
+        opacity: 1; /* Hiển thị khi active */
+      }
+    }
+    .c-img {
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6); // reduce brightness
+    }
+    .c-caption {
+      opacity: 0;
+      animation: slideUpAndDown 2s 1;
+      top: -20%;
+      left: 10%;
+      margin-top: 30rem;
+      width: 80%;
+      height: 40rem;
+      background-color: rgba(white, 0.2);
+      border-radius: 0.5rem;
+      h1 {
+        position: absolute;
+        padding-top: 3rem;
+        left: 5rem;
+      }
+      p {
+        position: absolute;
+        left: 5rem;
+        padding-top: 12rem;
+        text-align: left;
+      }
+      .btn {
+        position: absolute;
+        width: 20rem;
+        height: 5rem;
+        left: 4.9rem;
+        margin-top: 28rem;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        background-image: linear-gradient(
+          to right,
+          #ffdede 0%,
+          $primary-color 51%,
+          #ffdede 100%
+        );
+        border: none;
+        box-shadow: $box-shadow;
+        &:hover {
+          background-position: right center;
+        }
+      }
+    }
+  }
+  .c-prev,
+  .c-next {
+    scale: 2;
+  }
+}
+
+@keyframes slideUpAndDown {
+  0% {
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translateY(
+      -50px
+    ); /* Điều chỉnh khoảng cách di chuyển lên xuống */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

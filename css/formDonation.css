@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+#form_Donation {
+  background: url(https://images.unsplash.com/photo-1614522407266-ad3c5fa6bc24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.card-form {
+  width: 60%;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+    0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.367);
+}
+.card-form .form-indicator {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 0.5em;
+  font-size: 20px;
+  font-weight: bold;
+  background: #ed988f;
+  border-radius: 10px 10px 0 0;
+}
+.card-form .form-body {
+  padding: 10px;
+}
+.card-form .form-body .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.card-form .form-body .row input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 90%;
+  margin: 2px 15px;
+  height: 35px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: #ffffff00;
+}
+.card-form .form-body .row input[type="text"]::placeholder {
+  font-weight: bold;
+  color: rgba(black, 0.8);
+}
+.card-form .form-body .row .form-block .button {
+  text-align: center;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  border-radius: 2px;
+  padding: 1px 14px;
+  background: #262c36;
+  margin: 10px;
+  font-size: 14px;
+  -webkit-transition: 400ms background-color;
+  -moz-transition: 800ms opacity, 800ms right;
+  -ms-transition: 800ms opacity, 800ms right;
+  -o-transition: 800ms opacity, 800ms right;
+  transition: 200ms background-color;
+}
+.card-form .form-body .row .form-block .button:hover {
+  background-color: #ed988f;
+}
+/* .card-form .form-body .row .form-block .button:visited {
+	background-color: #82d14b;
+} */
+.card-form .form-footer {
+  margin: 0 25px 15px 25px;
+  padding: 15px 10px;
+}
+
+.card-form .form-footer .btn {
+  text-align: center;
+  display: inline-block;
+  height: 50px;
+  width: 98%;
+  line-height: 40px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  background: #ed988f;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  -webkit-transition: 400ms background-color;
+  -moz-transition: 800ms opacity, 800ms right;
+  -ms-transition: 800ms opacity, 800ms right;
+  -o-transition: 800ms opacity, 800ms right;
+  transition: 200ms background-color;
+}
+
+.card-form .form-footer .btn:hover {
+  background-color: #ed988f;
+}

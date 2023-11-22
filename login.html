@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tài khoản</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="image/images/1.svg" type="image/x-icon" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font Lexend -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Link css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- codee xoay nguoc anh -->
+    <input type="checkbox" id="flip" />
+    <!-- image -->
+    <div class="cover">
+      <div class="front">
+        <img src="image/images/anhnen1.jpeg" alt="" />
+        <div class="text">
+          <span class="text-1">Xin chào bạn ! <br /> </span>
+          <span class="text-2">
+            Cùng trải nghiệm Food Paradise cùng chúng tôi.</span>
+          <span class="text-3">Kết nối với chúng tôi</span>
+        </div>
+      </div> 
+    </div>
+    <!-- form đăng nhập -->
+    <div class="forms">
+      <div class="form-content">
+        <div class="login-form" id="login">
+          <div class="title">Đăng nhập</div>
+
+          <form>
+            <div class="input-boxes">
+             
+              <!-- input email -->
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input id="email" type="text" placeholder="pixelperfect@vku.udn.vn" required />
+              </div>
+              <!-- input mật khẩu -->
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input id="pass" type="password" placeholder="Mật khẩu" required />
+              </div>
+              <div class="text"><a href="#">Quên mật khẩu?</a></div>
+              <!-- button đăng nhập -->
+              <div class="button input-box">
+                <input  onclick="login()" type="button" value="Đăng nhập" />
+                <!-- <button onclick="login()">Đăng nhập</button> -->
+              </div>
+              <!-- label để check điều kiện chuyển ảnh -->
+              <div class="text sign-up-text">
+                Bạn chưa có tài khoản? <label for="flip">Đăng ký ngay</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- form đăng kí -->
+        <div class="signup-form" id="signup">
+          <div class="title">Đăng Ký</div>
+          <form action="#" onsubmit="signup()">
+            <div class="input-boxes">
+              <!-- input username -->
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input id="user" type="text" placeholder="Họ và tên" required />
+              </div>
+              <!-- input email -->
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input id="email" type="text" placeholder="pixelperfect@vku.udn.vn" required />
+              </div>
+              <!-- input mật khẩu -->
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input id="pass" type="password" placeholder="Mật khẩu" required />
+              </div>
+              <!-- button đăng kí -->
+              <div class="button input-box">
+                <!-- <input type="submit" value="Đăng Ký" /> -->
+                <button>Đăng kí</button>
+              </div>
+              <div class="text sign-up-text">
+                Đã có tài khoản? <label for="flip">Đăng nhập ngay</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Link script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

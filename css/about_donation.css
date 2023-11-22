@@ -1,0 +1,111 @@
+.about_stories {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #fdbdc7;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bg-one {
+  background-image: url("https://images.unsplash.com/photo-1516783154360-123b392d0833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80");
+}
+
+.bg-two {
+  background-image: url("https://images.unsplash.com/photo-1534953342533-7711c98712be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+}
+
+.bg-three {
+  background-image: url("https://images.unsplash.com/photo-1603533627544-4b256401b1ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+}
+
+.wrapper {
+  background-color: #dec5ca;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2px;
+}
+.tittel {
+  font-size: 25px;
+  color: #ed988f;
+}
+.zoom-effect-container {
+  position: relative;
+  height: 350px;
+  margin: 0 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-card {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.zoom-effect-container .content {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  padding: 0 3rem;
+}
+
+.zoom-effect-container:hover .image-card {
+  transform: scale(1.2);
+}
+
+.zoom-effect-container:hover .content {
+  top: 0;
+}
+
+.wrapper {
+  background-color: #fff;
+padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.zoom-effect-container {
+  flex-basis: calc(33.33% - 10px);
+  max-width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .zoom-effect-container {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}

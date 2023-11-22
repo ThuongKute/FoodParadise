@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Paradise</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="image/images/1.svg"
+      type="image/x-icon"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font Lexend -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- owl carousel -->
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <a href="#" class="logo"
+        ><img src="image/images/1.svg" alt="" 
+      /></a>
+
+      <nav class="navbar">
+        <a href="index.html"
+          ><i class="fa-solid fa-house" style="margin-right: 10px"></i>Trang
+          chủ</a
+        >
+        <a href="category.html">Ẩm thực</a>
+        <!-- <a href="activities.html">Ẩm thực</a> -->
+        <a href="New.html">Tin tức</a>
+        <!-- <a href="contact.html">Liên hệ</a> -->
+        <a href="about.html">Giới thiệu</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fa-solid fa-heart" id="cart-btn"></div>
+       <a href="login.html"><div class="fas fa-user" id="login-btn"></div></a>
+      </div>
+      </div>
+
+      <div class="see-heart">
+        <!-- box chưa tưng anh -->
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/images/bun-bo-hue.jpg" alt="" />
+          <div class="content">
+            <h3>Bún bò Huế</h3>
+            <!-- <span class="price"><i class="fa-solid fa-heart"></i></span> -->
+            <span class="quantity"><i class="fa-solid fa-star"></i> 4.5</span>
+          </div>
+        </div>
+        <!-- /// -->
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/images/mi-quang.jpg" alt="" />
+          <div class="content">
+            <h3>Mì Quảng</h3>
+            <!-- <span class="price">50.000 -</span> -->
+            <span class="quantity"><i class="fa-solid fa-star"></i> 4.7</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/images/Cao-lau.jpg" alt="" />
+          <div class="content">
+            <h3>Cao Lầu</h3>
+            <!-- <span class="price">50.000 -</span> -->
+            <span class="quantity"><i class="fa-solid fa-star"></i> 4.7</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="image/images/banh-xu-xe-phu-the-dac-san-ha-noi.jpg" alt="" />
+          <div class="content">
+            <h3>Bánh xu xê</h3>
+            <!-- <span class="price">50.000 -</span> -->
+            <span class="quantity"><i class="fa-solid fa-star"></i> 4.3</span>
+          </div>
+        </div>
+        <!-- <div class="total">Tổng: 150.000</div> -->
+        <a href="#" class="btn">Xem thêm</a>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner-slider start -->
+    <section class="banner-slider">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="image/images/anhnen1.jpeg" class="d-block w-100 c-img" />
+            <div class="carousel-caption d-none d-md-block c-caption">
+              <h1 class="display-1 fw-bolder text-capitalize mt-3 mb-5" style="color: #f5ddc6;">
+                Món ngon ngập tràn 
+              </h1>
+              <p class="fs-3" style="width:93%">
+                Bạn muốn khám phá mọi thứ khi đi du lịch, dã ngoại cùng người thân thì đến với chúng tôi là lựa chọn phù hợp nhất
+              </p>
+              <button class="btn btn-primary py-2 px-4 fs-3">
+                <a href="category.html" style="color: rgb(39, 29, 29);">Khám phá</a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://gonatour.vn/vnt_upload/news/07_2021/am_thuc_thai_lan.jpg" class="d-block w-100 c-img" />
+            <div class="carousel-caption d-none d-md-block c-caption">
+              <h1 class="display-1 fw-bolder text-capitalize mt-3 mb-5" style="color: #f5ddc6;">
+                Ẩm thực đặc sắc
+              </h1>
+              <p class="fs-3 " style="width:95%">
+                Nguồn thông tin đồ ăn phong phú và đa dạng, thích hợp cho những chuyến đi.<br>
+                Ẩm thực địa phương, chinh phục mọi cảm xúc!
+               </p>
+              <button class="btn btn-primary py-2 px-4 fs-3">
+                Xem thêm
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev c-prev"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next c-next"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- banner-slider end -->
+
+    <!-- new-product start -->
+    <div class="new-product">
+      <h2 class="text-center">Món ăn nổi bật</h2>
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card">
+              <div class="card-img">
+                <img src="image/images/bo-to-nam.jpg" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Bò tơ</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.478</h5>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(1200 reviews)</span>
+            </div>
+            <span class="text-secondary">Tây Ninh</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="card">
+              <div class="card-img">
+                <img src="image/images/Cao-lau.jpg" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Cao lầu</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(2000 reviews)</span>
+            </div>
+            <span class="text-secondary">Đà Nẵng</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-img">
+                <img src="image/images/bun-bo-hue.jpg" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Bún bò Huế</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.230</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(1900 reviews)</span>
+            </div>
+            <span class="text-secondary">Huế</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="image/images/pho-ha-noi.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Phở Hà Nội</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 4.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(3000 reviews)</span>
+            </div>
+            <span class="text-secondary">Hà Nội</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-img">
+                <img src="image/images/bun-cha-ha-noi.jpg" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Bún chả</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.890</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(2800 reviews)</span>
+            </div>
+            <span class="text-secondary">Hà Nội</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-img">
+                <img src="image/images/banh-beo-loc-trung.jpg" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Bánh bèo</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 2.030</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(1000 reviews)</span>
+            </div>
+            <span class="text-secondary">Huế</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-img">
+                <img src="image/images/banh-canh-ghe-thom-ngon.jpg" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Bánh canh ghẹ</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(1300 reviews)</span>
+            </div>
+            <span class="text-secondary">Đà Nẵng</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-img">
+                <img src="image/images/banh-duc-la-dua-mon-ngon-dat-can-tho.jpg" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Bánh đúc lá dứa</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 2.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(993 reviews)</span>
+            </div>
+            <span class="text-secondary">Cần Thơ</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="image/images/baba-HAIDUONG-BAC.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Baba</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(1702 reviews)</span>
+            </div>
+            <span class="text-secondary">Hải Dương</span>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- new-product end -->
+
+    <!-- Feature product start -->
+    <section class="feature-product">
+      <h2 class="text-center">Món Đặc sản</h2>
+      <div class="row">
+        <div class="card">
+          <div class="card-img"><img src="image/images/bò-tái-kién-đốt-VINHPHUC-BAC.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+            <h5 class="card-title fs-3">Bò tái kiến đốt</h5>
+            <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.230</h6>
+            <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(2000 reviews)</span>
+            </div>
+            <span class="text-secondary">Vĩnh Phúc</span>
+          </div>
+          
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="image/images/chuot-dong-nuong.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+                <h5 class="card-title fs-3">Chuột đồng nướng</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(2000 reviews)</span>
+            </div>
+            <span class="text-secondary">Miền Tây</span>
+              </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="image/images/banh-cong-can-tho.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+                <h5 class="card-title fs-3">Bánh cống </h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(1780 reviews)</span>
+            </div>
+            <span class="text-secondary">Cần Thơ</span>
+              </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="image/images/baba-HAIDUONG-BAC.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+                <h5 class="card-title fs-3">BaBa</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 2.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(2078 reviews)</span>
+            </div>
+            <span class="text-secondary">Hải Dương</span>
+              </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- Feature product end -->
+    
+    <!-- popular product start -->
+    <section class="popular-product">
+      <h2 class="text-center">Món ăn được ưa chuộng</h2>
+      <div class="row">
+        <div class="card">
+          <div class="card-img"><img src="image/images/banh-canh-trang-binh-tay-ninh.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+            <h5 class="card-title fs-3">Bánh canh Trảng Bàng</h5>
+            <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.830</h6>
+            <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(2300 reviews)</span>
+            </div>
+            <span class="text-secondary">Tây Ninh</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="image/images/banh-gio-ha-noi.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+                <h5 class="card-title fs-3">Bánh giò</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 4.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(5000 reviews)</span>
+            </div>
+            <span class="text-secondary">Hà Nội</span>
+              </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="image/images/banh-trang-nuong-da-lat.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+                <h5 class="card-title fs-3">Bánh tráng nướng</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 2.130</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(4000 reviews)</span>
+            </div>
+            <span class="text-secondary">Đà Lạt</span>
+              </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="image/images/banh-trang-phoi-suong-tayninh.jpg" class="card-img-top" alt="..."></div>
+          <div class="card-body">
+                <h5 class="card-title fs-3">Bánh tráng phơi sương</h5>
+                <h5 class="price fs-4"><i class="fa-regular fa-heart nav_icon"></i> 3.030</h6>
+                  <div class="reviews">
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-regular fa-star"></i></li>
+                    </ul>
+                    <span class="text-secondary">(3200 reviews)</span>
+            </div>
+            <span class="text-secondary">Tây Ninh</span>
+              </div>
+        </div>
+      </div>
+    </section>
+    <!-- popular product end -->
+
+    <!-- donate start -->
+    <section class="donate">
+      <div class="donate-wrapper">
+        <p class="text-center title">Hàng ngàn món ăn đang chờ bạn</p>
+        <p class="text-center desc">Khi cuộc sống bộn bề , căng thẳng quá thì ta hãy dành một ít thời gian tận hưởng cuộc sống, đặc biệt việc đi du lịch thưởng thức ẩm thực của các tỉnh thành trên 
+          đất nước là một điều thú vị, không chỉ khám phá nhiều thứ mà bạn còn thu lại được trải nghiệm cho mình qua các chuyến đi.
+        </p>
+        <button class="btn"><a href="category.html" style="color: white;">Khám phá</a></button>
+      </div>
+    </section>
+    <!-- donate end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer-left col-md-4 col-sm-6">
+        <div class="about">
+          <h3 style="margin-bottom: 1rem">Về website của chúng tôi</h3>
+          <p>
+            Website ẩm thực với mục đích giới thiệu cho mọi người các thông tin chi tiết món ăn, những địa điểm nào có món ăn độc đáo
+            để mọi người có trải nghiệm tốt nhất cho chuyến đi của mình.
+          </p>
+        </div>
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-center col-md-4 col-sm-6">
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <p><span> 189 Đỗ Bá</span> Đà Nẵng, Việt Nam</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p>+84 1234 567 8910</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p>pixelperfect@vku.udn.vn</p>
+        </div>
+      </div>
+      <div class="footer-right col-md-4 col-sm-6">
+        <img src="image/images/1.svg" />
+        <p class="menu">
+          <a href="#">Trang chủ</a> | <a href="category.html">Ẩm thực</a> |
+          <a href="activities.html">Liên hệ</a> |
+          <a href="New.html">Tin Tức</a>
+        </p>
+        <p style="color: grey; font-weight: 400">
+          Copyright &#169; 2023 DACK
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Boostrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Owl-carousel-js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- index.js -->
+    <script src="js/index.js"></script>
+    
+  </body>
+</html>

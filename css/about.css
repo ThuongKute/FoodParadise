@@ -1,0 +1,584 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background-color: #fff;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ed988f;
+  border-radius: 4px;
+}
+
+.header {
+  position: fixed;
+  height: 8rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background-color: #ffffff;
+  box-shadow: rgba(206, 102, 90, 0.2) 0px 8px 24px;
+}
+.header .logo img {
+  width: 10rem;
+  scale: 1.5;
+  padding: 0 2rem;
+}
+.header .navbar a {
+  display: block;
+  font-size: 1.7rem;
+  margin: 0 2rem;
+  color: #ad6910;
+  transition: color 0.25s linear;
+  position: relative;
+}
+.header .navbar a::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  bottom: 0;
+  left: 50%; /* Đặt left thành 50% để nó bắt đầu từ giữa */
+  transform: translateX(-50%) scaleX(0); /* Thêm transform: translateX(-50%) để căn giữa */
+  width: 100%;
+  height: 3px;
+  background: #e9a566;
+  transform-origin: center; /* Đặt transform-origin thành center */
+  transition: transform 0.3s;
+}
+.header .navbar a:hover {
+  color: #860000;
+}
+.header .navbar a:hover::after {
+  transform: translateX(-50%) scaleX(1); /* Thêm transform: translateX(-50%) để căn giữa */
+}
+.header .icons div {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  color: #581313;
+  font-size: 2rem;
+  margin-left: 0.3rem;
+  text-align: center;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+.header .icons div:hover {
+  background-color: #e9a566;
+  color: #fff;
+}
+.header #menu-btn {
+  display: none;
+}
+.header .login {
+  border-top: 0.5rem solid #ed988f;
+  position: absolute;
+  top: 100%;
+  right: -150%;
+  border-radius: 0.5rem;
+  box-shadow: rgba(237, 152, 143, 0.2) 0px 8px 24px;
+  width: auto;
+  height: auto;
+  background-color: #fff4f4;
+  padding: 1rem;
+}
+.header .login a {
+  font-size: 1.6rem;
+  color: #404040;
+}
+.header .login a:hover {
+  color: #ed988f;
+}
+.header .login.active {
+  right: 11rem;
+  transition: right 0.25s liner;
+}
+.header .see-heart {
+  border-top: 0.5rem solid #ed988f;
+  position: absolute;
+  top: 100%;
+  right: -150%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(237, 152, 143, 0.2) 0px 8px 24px;
+  width: 45rem;
+  height: 90vh;
+  background-color: #fff;
+}
+.header .see-heart.active {
+  right: 2rem;
+  transition: right 0.25s liner;
+}
+.header .see-heart .box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin: 2rem 0;
+}
+.header .see-heart .box img {
+  height: 10rem;
+  object-fit: cover;
+  max-width: 150px;
+}
+.header .see-heart .box .fa-trash {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  cursor: pointer;
+  color: rgba(64, 64, 64, 0.5);
+  transform: translateY(-50%);
+}
+.header .see-heart .box .fa-trash:hover {
+  color: #e9a566;
+}
+.header .see-heart .box .content h3 {
+  color: #404040;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+.header .see-heart .box .content span {
+  color: #404040;
+  font-size: 1.6rem;
+}
+.header .see-heart .box .content .quantity {
+  padding-left: 0.1rem;
+}
+.header .see-heart .box .content .quantity i{
+  color:#f7c01b;
+}
+.header .see-heart .btn {
+  text-align: center;
+  margin: 0rem;
+  display: inline-block;
+  padding: 0.2rem 4rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #404040;
+  color: #404040;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.header .see-heart .btn:hover {
+  background-color: #e9a566;
+  color: #fff;
+  border: none;
+}
+main {
+  padding: 2rem;
+}
+
+.about-wrapper {
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  top: 105px;
+  margin: 0 5rem;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-left: 35%; /* Di chuyển sang phải 35% */
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.carousel-indicators li.active {
+  background-color: transparent;
+  margin-left: 15px;
+}
+.carousel-indicators li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  width: 100%;
+  transition: transform 0.8s ease;
+}
+
+.carousel-item img {
+  width: 45rem;
+  height: 48rem;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  margin-top: 60px;
+  margin-left: 10%; /* Sửa giá trị margin-left tại đây */
+}
+
+@media (max-width: 767px) {
+  /* Kích thước màn hình mobile */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .carousel-caption {
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: auto;
+    position: relative;
+    transform: none;
+    margin-top: 10px;
+  }
+}
+
+.carousel-caption h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.carousel-caption h2 {
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+}
+.carousel-caption p {
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.2); /* Màu nền của nút */
+  width: 40px; /* Chiều rộng của nút */
+  height: 40px; /* Chiều cao của nút */
+  border-radius: 50%; /* Bo tròn viền của nút */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #fff; /* Màu icon */
+  font-size: 20px; /* Kích thước icon */
+  position: relative;
+  top: 25%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: ""; /* Ẩn nội dung trước và sau icon */
+}
+
+.carousel-control-prev {
+  left: px; /* Vị trí của nút điều khiển trước */
+}
+
+.carousel-control-next {
+  right: 10px; /* Vị trí của nút điều khiển sau */
+}
+
+.social-links {
+  display: flex;
+  align-items: end;
+  position: absolute;
+  top: 10%;
+  right: 110%;
+  flex-direction: column;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  color: #333;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  margin: 2px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
+}
+
+#facebook svg {
+  fill: #3b5998;
+}
+
+#zalo svg {
+  fill: #e4405f;
+}
+
+#github {
+  fill: #333;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #404040; /* Chọn màu xám nhạt tùy ý */
+  margin-top: 15rem;
+  padding: 3rem 3rem;
+}
+
+.footer__contact-map {
+  display: flex;
+  flex-direction: row;
+  width: 66.666%;
+  margin-top: 20px;
+  padding-right: 12px;
+}
+
+.footer__contact-us {
+  width: 33.333%;
+  padding-left: 12px;
+  overflow-y: auto;
+  margin-left: 70px;
+}
+
+.footer__contact-us h3 {
+  font-size: 20px;
+  height: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer__contact-us label {
+  display: flex;
+  height: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.map iframe {
+  width: 250%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  border-radius: 10px;
+}
+.comic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed988f;
+  border: 2px solid #000;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 10px 30px;
+  border: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #ed988f;
+}
+
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .carousel-caption h2 {
+    font-size: 21px;
+    margin-top: 5px;
+  }
+
+  .carousel-caption p {
+    display: none;
+  }
+  .carousel-indicators {
+    margin-left: 11%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .footer {
+    margin-top: 11%;
+    height: 90%;
+    padding: 0px;
+  }
+  .footer__contact-map {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+
+/* Reponsive header */@media screen and (max-width: 991px) {
+	 html {
+    font-size: 55%;
+ }
+  .header {
+    padding: 0.5rem;
+ }
+  .header .login.active {
+    right: 2rem;
+ }
+}
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    display: flex;
+    flex-direction: column;
+    border-top: 0.5rem solid #ed988f r;
+    position: absolute;
+    top: 100%;
+    right: -150%;
+    width: 30rem;
+    box-shadow: rgba(237, 152, 143, 0.2) 0px 8px 24px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+ }
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+ }
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.4 linear;
+ }
+  .header #menu-btn {
+    display: inline-block;
+ }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+ }
+}
